@@ -6,7 +6,7 @@
   body {
     font-family: "Courier New", Courier, monospace;
     /* Add flex to body to get full screen */
-    height: 95vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -75,8 +75,8 @@
   
   /* Style the footer */
   footer {
-    background-color: #89F336;
-    padding: 10px;
+    background-color: #9FDBE3;
+    padding: 5px;
     text-align: center;
     color: #000;
     height: 100%;
