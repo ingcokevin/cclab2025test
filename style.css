@@ -2,17 +2,11 @@
     box-sizing: border-box;
   }
 
-  .creepster-regular {
-  font-family: "Creepster", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
   
   body {
     font-family: "Courier New", Courier, monospace;
     /* Add flex to body to get full screen */
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -20,12 +14,21 @@
   
   /* Style the header */
   header {
-    background-color: #89F336;
-    padding: 30px;
-    text-align: center;
+    background-color: #9FDBE3;
+    padding: 5px;
+    text-align: left;
     font-size: 35px;
     color: #000;
-    height: 100%;
+
+  }
+
+  .header-contain{
+    float: left;
+    color: #121C1C;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 20px;
   }
   
   /* Container for flexboxes */
@@ -42,7 +45,18 @@
     flex: 1;
     background: #CCCCFF;
     padding: 20px;
+    overflow-y: auto; 
   }
+
+  .sketch-nav{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #C9DEF5;
+    padding: 20px;
+    overflow-y: auto; 
+  }
+
   
   /* Style the list inside the menu */
   nav ul {
@@ -75,3 +89,47 @@
       flex-direction: column;
     }
   }
+
+  /*from w3schools */
+  /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
